@@ -1,0 +1,46 @@
+body {
+      background-color: #5CDB95;
+      font-family: 'Trebuchet MS', sans-serif;
+      margin: 0 auto;
+      height: 100%;
+      font-size: 600%;
+    }
+
+    .img-thumbnail{
+    background:#1b1b1b;
+    padding-left:20px;
+    padding-right:20px;
+    border:none;
+    }
+    .img-thumbnail a{
+    float:none;
+    display :block;
+
+    }
+
+    .img-thumbnail img:hover{
+
+    opacity: 0.5;
+     animation: shake 0.5s;
+      animation-iteration-count: infinite;
+    }
+    #player1clock {
+      color: white;
+      float: left;
+    }
+    #player2clock {
+      color: black;
+      float: right;
+    }
+    .now_playing {
+      border-bottom: .2em solid #aa0000;
+    }
+    #info {
+      font-size: 80%;
+      color: #AA0000;
+      text-align: center;
+      width: 100%;
+    }
+    .hidden {
+      visibility: hidden;
+    }

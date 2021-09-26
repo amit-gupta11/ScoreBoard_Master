@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Chess Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link th:href="@{/css/chess_clock.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/javascript/chess_clock.js}"></script>
+</head>
+<body class="container-fluid" style='' onkeypress="game.keypress(event)" onload="createGame()">
+<div class="img-thumbnail" >
+    <header >
+        <a align="right" th:href="@{/}"><img src="/pictures/ScoreBoard-logos_white.png" width="10%" height="10%" ></a>
+    </header>
+</div>
+<div id='info' class='hidden'>-</div>
+<div id='player1clock'>0</div>
+<div id='player2clock'>0</div>
+</body>
+
+</html>
