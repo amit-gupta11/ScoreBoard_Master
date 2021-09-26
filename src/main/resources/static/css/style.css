@@ -22,11 +22,9 @@ border:none;
 .img-thumbnail a{
 float:none;
 display :block;
-
 }
 
 .img-thumbnail img:hover{
-
 opacity: 0.5;
  animation: shake 0.5s;
   animation-iteration-count: infinite;

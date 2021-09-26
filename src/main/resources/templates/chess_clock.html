@@ -8,15 +8,16 @@
     <link th:href="@{/css/chess_clock.css}" rel="stylesheet" />
     <script type="text/javascript" th:src="@{/javascript/chess_clock.js}"></script>
 </head>
-<body class="container-fluid" style='' onkeypress="game.keypress(event)" onload="createGame()">
+<body style='' onkeypress="game.keypress(event)" onload="createGame()">
 <div class="img-thumbnail" >
-    <header >
+    <header>
         <a align="right" th:href="@{/}"><img src="/pictures/ScoreBoard-logos_white.png" width="10%" height="10%" ></a>
     </header>
 </div>
+<div class="container">
 <div id='info' class='hidden'>-</div>
 <div id='player1clock'>0</div>
 <div id='player2clock'>0</div>
+</div>
 </body>
-
 </html>
