@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Tabble Tennis Scoreboard</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link th:href="@{/css/ttscoreboard.css}" rel="stylesheet" />
+    <script type="text/javascript" th:src="@{/javascript/ttscoreboard.js}"></script>
+</head>
+<body>
+<div class="img-thumbnail" >
+    <header >
+        <a align="right" th:href="@{/}"><img src="/pictures/ScoreBoard-logos_black.png" width="10%" height="10%" ></a>
+    </header>
+</div>
+<br>
+<div class="container" align="center">
+
+
+Add new player:
+<input type="text" id="playerName">
+<button id="submitPlayer">Submit</button><br>
+<p id="duplicateNames"></p><br>
+<p id="morePlayers"></p>
+<hr>
+
+<h4>Add new match</h4>
+Pick two players and enter their points while respecting table tennis rules -<br>(first to 11 with +2 points/in case of
+10-10 first to +2 points to win a set, first to 3 sets out of 5 to win a match).<br>
+<br><br>
+<form id="newMatch">
+    Player A:
+    <select id="selectA" class="newMatch">
+        <option value=''>Select ...</option>
+    </select>
+    Player B:
+    <select id="selectB" class="newMatch">
+        <option value=''>Select ...</option>
+    </select><br>
+    1. Set:
+    <input type="number" id = "a1s" name="a1" class="newMatch" value="0">
+    <input type="number" id = "b1s" name="b1" class="newMatch" value="0">
+    <p id="p1k"></p>
+    <p id="p1"></p>
+    2. Set:
+    <input type="number" id = "a2s" name="a2" class="newMatch" value="0">
+    <input type="number" id = "b2s" name="b2" class="newMatch" value="0">
+    <p id="p2k"></p>
+    <p id="p2"></p>
+    3. Set:
+    <input type="number" id = "a3s" name="a3" class="newMatch" value="0">
+    <input type="number" id = "b3s" name="b3" class="newMatch" value="0">
+    <p id="p3k"></p>
+    <p id="p3"></p>
+    4. Set:
+    <input type="number" id = "a4s" name="a4" class="newMatch" value="0">
+    <input type="number" id = "b4s" name="b4" class="newMatch" value="0">
+    <p id="p4k"></p>
+    <p id="p4"></p>
+    5. Set:
+    <input type="number" id = "a5s" name="a5" class="newMatch" value="0">
+    <input type="number" id = "b5s" name="b5" class="newMatch" value="0">
+    <p id="p5k"></p>
+    <p id="p5"></p>
+    <p id="winner"></p>
+    <button id="submitMatch">Submit></button><br>
+</form><hr>
+
+Pick two players and see their past matches:<br>
+<form id="pastMatches">
+    Player A:
+    <select id="pastA" class="past">
+        <option value=''>Select ...</option>
+    </select>
+    Player B:
+    <select id="pastB" class="past">
+        <option value=''>Select ...</option>
+    </select>
+    <button id="submitPair">Submit></button><br>
+    <p id="pastP"></p><br>
+</form><hr>
+
+Pick a player to see his/her match history: <br>
+<form id="playerHistory">
+    Player:
+    <select id="player" class="phis">
+        <option value=''>Select ...</option>
+    </select>
+    <button id="submitPlayerHistory">Submit></button><br>
+    <p id="playerStats"></p><br>
+    <p id="playerHis"></p><br>
+</form><hr>
+
+Pick a match to see the result: <br>
+<form id="gameHistory">
+    Match:
+    <select id="game" class="ghis">
+        <option value=''>Select ...</option>
+    </select>
+    <button id="submitGameHistory">Submit></button><br>
+    <p id="gameHis"></p>
+    <p id="otherGames"></p><br>
+</form><hr>
+
+<button id="matchHistory">Complete match history</button>
+<p id="allMatches"></p><hr>
+
+<button id="playerRankings">Players rankings</button>
+Sorted alphabetically, by wins, win-loss difference and last by sets won<hr>
+<p id="rankings"></p>
+    <br>
+</div>
+<footer class="text-center text-lg-start" style="background-color: #5CDB95;">
+
+    <!-- Copyright -->
+    <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="https://lng-consultancy.com/"> L&G Consultancy</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+</body>
+</html>

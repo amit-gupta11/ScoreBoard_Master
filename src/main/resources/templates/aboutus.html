@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+          integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link th:href="@{/css/style.css}" rel="stylesheet"/>
+    <link th:href="@{/css/clipart.css}" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div class="container-fluid">
+
+    <nav>
+        <div class="logo">
+            <a>SCOREBOARD</a>
+        </div>
+        <input type="checkbox" id="click">
+        <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a th:href="@{/}">Home</a></li>
+            <li><a class="active" th:href="@{/aboutsUS}">About</a></li>
+            <li><a th:href="@{/viewGamesScoreboard}">Games</a></li>
+            <li><a th:href="@{/addTeamForm}">Feedback</a></li>
+        </ul>
+    </nav>
+    <div class="img-thumbnail">
+        <header>
+            <a align="right" th:href="@{/}"><img src="/pictures/ScoreBoard-logos_black.png" width="10%"
+                                                 height="10%"></a>
+        </header>
+    </div>
+    <div class="container-fluid">
+        <br>
+        <h1 style="color:#5CDB95" align="center">SCOREBOARD</h1>
+    <div class="shadowbox" >
+        <img src="/pictures/logo.png"></a>
+        <br>
+        <p style="color:#5CDB95" align="center">A ScoreBoard is a Keeper or Recording the Score or Result during a Game or a Event.</p>
+        <p style="color:#5CDB95" align="center">So we tried our best efforts to make a proper working online ScoreBoard for everyone.</p>
+        <p style="color:#5CDB95" align="center">We Hope You Like It.</p>
+    </div>
+    </div>
+    <div class="container">
+        <div class="table blue">
+            <div class="base">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="bottom"></div>
+
+        </div>
+        <div class="table red">
+            <div class="base">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="bottom"></div>
+            <div class="ball"></div>
+
+        </div>
+    </div>
+    <br>
+    <footer class="text-center text-lg-start" style="background-color: #5CDB95;">
+
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="https://lng-consultancy.com/"> L&G Consultancy</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+</div>
+</body>
+
+</html>
